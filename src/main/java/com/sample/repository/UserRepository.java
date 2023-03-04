@@ -40,6 +40,12 @@ public class UserRepository {
         query.where(isAdmin);
 
         TypedQuery<User> userQuery = entityManager.createQuery(query);
+        
+        
+        
+        
+       /* CriteriaBuilder cb=entityManager.getCriteriaBuilder();
+        CriteriaBuilder<Co>*/
 
         return userQuery.getResultList();
 
